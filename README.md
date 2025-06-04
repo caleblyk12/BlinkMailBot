@@ -49,7 +49,7 @@ BlinkMail/
 ### 1. Enable Gmail API, OAuth2.0 
 
 - Visit: https://console.cloud.google.com/
-- Create a new project (top-left) and name it whatever you like, leaving organisation as none
+- Create a new project (top-left button, to the left of search bar) and name it whatever you like, leaving organisation as none
 - Enable Gmail API - searchbar at the top of google cloud console, search gmail, click gmail API, click enable
 - Configure OAuth consent screen - click OAuth consent screen on left panel under APIs and services, click get started, fill in app name and your own email, set to external, set own email again
 - Go to audience (left panel still), scroll down to test users, add user, add the email you would like to be tracked
