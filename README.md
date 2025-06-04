@@ -16,7 +16,7 @@ Emails are often delayed, buried, or missed in cluttered inboxes. BlinkMailBot s
 ## 📌 Features
 
 - Monitors your Gmail inbox for new messages
-- Filters emails based on keywords in the sender, subject, or snippet
+- Filters emails based on keywords in the sender, subject, or snippet (Not case sensitive!)
 - Sends relevant email alerts to your Telegram via a bot
 - Oauth 2.0 authorization with automatic token refresh
 - Local token storage and filter data
@@ -68,7 +68,7 @@ python main.py
 
 You'll be asked to log in to your Gmail account and allow read access. After that, the bot starts checking for new emails every 30 seconds and sends matches to Telegram.
 
-## ✍️ Customization
+## ✍️ Filter Customization
 
 Edit the `KEYWORDS` list in `main.py`:
 
@@ -86,6 +86,7 @@ KEYWORDS = ['payment', 'urgent', '2fa']
 
 - Single-user setup only
 - Requires your device to be always on (unless you deploy it)
+- Currently filters only detect keywords presence in sender, header, or snippets of email body
 
 ---
 
