@@ -1,6 +1,6 @@
 # BlinkMailBot 
 
-BlinkMailBot is a lightweight Python tool that notifies you on Telegram when you receive emails matching certain keywords. It checks your Gmail inbox every 30 seconds and forwards relevant messages to you.
+BlinkMailBot is a lightweight Python tool that notifies you on Telegram when you receive emails matching certain keywords. It checks your Gmail inbox every 30 seconds and forwards relevant messages to you. From getting 2FA codes on the fly, to having urgent work emails notifying you on your Telegram instantly, you take full control of what gets filtered and sent. 
 
 ## Why? For whom?
 Emails are often delayed, buried, or missed in cluttered inboxes. BlinkMailBot solves this by surfacing only important messages directly to the platform you use most: Telegram. This improves response time and ensures critical messages never go unnoticed.
