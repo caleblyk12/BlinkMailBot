@@ -70,9 +70,9 @@ BlinkMail/
 - Replace <YOUR_BOT_TOKEN> with your actual token. Go back to your chat and send any message to the bot, before returning to the browser and refresh the page.
 - Look for "chat":{"id":123456789,...} in the JSON response. This number is your chat ID.
 - Save the bot token and chat_id in a .env file in your project root, they MUST be named TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
-- Do so by creating a file called .env in the project root, and including the below 2 lines:
-  TELEGRAM_BOT_TOKEN='your_token_here'
-  TELEGRAM_CHAT_ID='your_chat_id_here'
+- Do so by creating a new file and name it .env in the project root, and writing the following 2 lines in the file:
+  /nTELEGRAM_BOT_TOKEN='your_token_here'
+  /nTELEGRAM_CHAT_ID='your_chat_id_here'
 - Include quotation marks!
   
 
