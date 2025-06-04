@@ -40,19 +40,22 @@ BlinkMail/
 - Create a project
 - Enable Gmail API
 - Configure OAuth consent screen (internal for personal use)
+- Leave scope as empty for now, it will be managed through code
 - Create OAuth 2.0 credentials (Desktop App)
-- Download the `client_secret.json` file and place it in your project root
+- Download client secret credentials as json
+- Paste the credentials into a `client_secret.json` file and place it in your project root (the file MUST be named client_secret.json)
 
 ### 2. Create Telegram Bot
 
 - Message [@BotFather](https://t.me/BotFather)
 - Use `/newbot` and follow the prompts
 - Save the Bot Token
-- Open a chat with your bot and send a message
+- Open a chat with your bot and send any message, this is to get the chat id by monitoring updates in the next step
 - Get your `chat_id` by visiting:
   ```
   https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
   ```
+- Save the bot token and chat_id in a .env file in your project root, they MUST be named TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
 
 ### 3. Install Dependencies
 
