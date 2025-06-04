@@ -10,7 +10,7 @@ Emails are often delayed, buried, or missed in cluttered inboxes. BlinkMailBot s
 
 - Python
 - Gmail API via Google Cloud
-- OAuth 2.0 authorization
+- OAuth 2.0 authorization (Auto refresh tokens and local storage)
 - Telegram Bot API
 
 ## 📌 Features
@@ -42,8 +42,8 @@ BlinkMail/
 
 - Visit: https://console.cloud.google.com/
 - Create a new project (name it whatever you like)
-- Enable Gmail API
-- Configure OAuth consent screen (internal for personal use)
+- Enable Gmail API - navigate to Gmail API in Google Cloud Console, click enable
+- Configure OAuth consent screen (set to internal for personal use)
 - Leave scope as empty for now, it will be managed through code, so just follow the default Oauth client creation steps
 - Create OAuth 2.0 credentials (Desktop App)
 - Download client secret credentials as json, and place this file in your project root through file explorer or otherwise
@@ -61,6 +61,11 @@ BlinkMail/
   ```
 - Replace <YOUR_BOT_TOKEN> with your actual token. Look for "chat":{"id":123456789,...} in the JSON response. This number is your chat ID.
 - Save the bot token and chat_id in a .env file in your project root, they MUST be named TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
+- Do so by creating a file called .env in the project root, and including the below 2 lines:
+  TELEGRAM_BOT_TOKEN='your_token_here'
+  TELEGRAM_CHAT_ID='your_chat_id_here'
+- Include quotation marks!
+  
 
 ### 3. Install Dependencies
 
