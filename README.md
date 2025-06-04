@@ -43,12 +43,12 @@ BlinkMail/
 ### 1. Enable Gmail API, OAuth2.0 
 
 - Visit: https://console.cloud.google.com/
-- Create a new project (name it whatever you like)
-- Enable Gmail API - navigate to Gmail API in Google Cloud Console, click enable
-- Configure OAuth consent screen (set to internal for personal use)
-- Leave scope as empty for now, it will be managed through code, so just follow the default Oauth client creation steps
-- Create OAuth 2.0 credentials (Desktop App)
-- Download client secret credentials as json, and place this file in your project root through file explorer or otherwise
+- Create a new project (top-left) and name it whatever you like, leaving organisation as none
+- Enable Gmail API - searchbar at the top of google cloud console, search gmail, click gmail API, click enable
+- Configure OAuth consent screen - click OAuth consent screen on left panel under APIs and services, click get started, fill in app name and your own email, set to external, set own email again
+- Go to audience (left panel still), scroll down to test users, add user, add the email you would like to be tracked
+- Go to overview (left panel), create OAuth client, select desktop app as application type, name it whatever you like, create, and download JSON
+- Place the downloaded JSON file in your project root through file explorer or otherwise
 - Rename the file client_secret.json in your project root (IMPORTANT)
 
 ### 2. Create Telegram Bot
