@@ -39,6 +39,8 @@ BlinkMail/
 ### Prerequisites
 - Python3.x installed
 - Forked and pulled this repository into local project within VSCode, Pycharm, or environment of choice
+- If not using Pycharm, set up a virtual environment for the pip installer
+  https://youtu.be/GZbeL5AcTgw?si=4sf93VyTaig52N3V
 
 ### 1. Enable Gmail API, OAuth2.0 
 
