@@ -49,7 +49,7 @@ def create_service(client_secret_file, api_name, api_version, scopes, prefix='')
     ###finally, use token to build and return the service. this gives client access to the APIs
     try:
         service = build(API_SERVICE_NAME, API_VERSION, credentials=creds, static_discovery=False)
-        print(API_SERVICE_NAME, API_VERSION, 'service created successfully') #whats the diff betw this and format strings? 
+        print(API_SERVICE_NAME, API_VERSION, 'service created successfully') 
         return service
     except Exception as e:
         print(e)
