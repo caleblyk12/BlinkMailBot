@@ -7,6 +7,10 @@ Emails are often delayed, buried, or missed in cluttered inboxes. BlinkMailBot s
 As someone who often forgets to check my inbox, I have a tendency to miss important emails despite being on my laptop often for work. This bot is limited in that it only works when your pc/laptop is running as it is hosted locally, but works perfectly for my workflows.
 If your someone like me, always on your laptop for work, and highly active on telegram, but don't check your inbox often, or get drowned in spammy, unimportant nonsense, I hope you'll extract some value from this small project of mine. 
 
+- Get 2fa codes on the fly
+- Be notified of hidden recurring transactions, or track billing expenses easily
+- Receive notifications from urgent work matters
+
 
 ## 🔧 Tech Stack
 
@@ -94,7 +98,7 @@ You will be notified via telegram whenever an email matching filters is received
 Edit the `KEYWORDS` list in `main.py`:
 
 ```python
-KEYWORDS = ['payment', 'urgent', '2fa']
+KEYWORDS = ['payment', 'urgent', '2fa', 'billing']
 ```
 
 ## 📎 Notes
