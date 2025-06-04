@@ -54,7 +54,7 @@ BlinkMail/
 - Configure OAuth consent screen - click OAuth consent screen on left panel under APIs and services, click get started, fill in app name and your own email, set to external, set own email again
 - Go to audience (left panel still), scroll down to test users, add user, add the email you would like to be tracked
 - Go to overview (left panel), create OAuth client, select desktop app as application type, name it whatever you like, create, and download JSON
-- Place the downloaded JSON file in your project root through file explorer or otherwise
+- Place the downloaded JSON file in your project root folder through your own file explorer or otherwise
 - Rename the file client_secret.json in your project root (IMPORTANT)
 
 ### 2. Create Telegram Bot
