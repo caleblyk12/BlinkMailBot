@@ -5,7 +5,7 @@ BlinkMailBot is a lightweight Python tool that notifies you on Telegram when you
 ## Why? For whom?
 Emails are often delayed, buried, or missed in cluttered inboxes. BlinkMailBot solves this by surfacing only important messages directly to the platform you use most: Telegram. This improves response time and ensures critical messages never go unnoticed.
 As someone who often forgets to check my inbox, I have a tendency to miss important emails despite being on my laptop often for work. This bot is limited in that it only works when your pc/laptop is running as it is hosted locally, but works perfectly for my workflows.
-If your someone like me, always on your laptop for work, and highly active on telegram, but don't check your inbox often, or get drowned in spammy, unimportant nonsense, I hope you'll extract some value from this small project of mine. 
+If you're someone like me, always on your laptop for work, and highly active on telegram, but don't check your inbox often, or get drowned in spammy, unimportant nonsense, I hope you'll extract some value from this lightweight utility I've built. 
 
 - Get 2fa codes on the fly
 - Be notified of hidden recurring transactions, or track billing expenses easily
@@ -42,7 +42,7 @@ BlinkMail/
 
 ### Prerequisites
 - Python3.x installed
-- Forked and pulled this repository into local project within VSCode, Pycharm, or environment of choice
+- Cloned or downloaded this repository into local project within VSCode, Pycharm, or environment of choice
 - If not using Pycharm, set up a virtual environment for the pip installer
   https://youtu.be/GZbeL5AcTgw?si=4sf93VyTaig52N3V
 
@@ -115,4 +115,8 @@ KEYWORDS = ['payment', 'urgent', '2fa', 'billing']
 
 ---
 
-Feel free to fork and extend it!
+## 📜 License and Usage
+
+This project is licensed under the [MIT License](LICENSE).
+
+Feel free to use, modify, or extend BlinkMailBot for your own purposes, within the terms of the license.
