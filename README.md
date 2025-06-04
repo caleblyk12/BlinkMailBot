@@ -74,7 +74,8 @@ pip install google-api-python-client google-auth google-auth-oauthlib requests
 python main.py
 ```
 Upon running main.py:
-You'll be asked to log in to your Gmail account and allow read access. This is a one time setup. After that, the bot starts checking for new emails every 30 seconds and sends matches to Telegram.
+You'll be asked to log in to your Gmail account and allow read access. This is a one time setup, and after giving access you can close your browser and the bot will run automatically. 
+After that, the bot starts checking for new emails every 30 seconds and sends matches to Telegram.
 Tokens are refreshed automatically and stored locally once access is given the first time, meaning the only form of maintainence after this is running main.py and leaving your pc/laptop on in the background. 
 You will be notified via telegram whenever an email matching filters is received while your pc is running the program. 
 
