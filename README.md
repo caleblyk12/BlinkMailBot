@@ -56,12 +56,13 @@ BlinkMail/
 - Message [@BotFather](https://t.me/BotFather)
 - Use `/newbot` and follow the prompts
 - Save the Bot Token
-- Open a chat with your bot and send any message, this is to get the chat id by monitoring updates in the next step
+- Open a chat with your bot and /start. Leave the chat open, its needed for later steps
 - Get your `chat_id` by visiting:
   ```
   https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates
   ```
-- Replace <YOUR_BOT_TOKEN> with your actual token. Look for "chat":{"id":123456789,...} in the JSON response. This number is your chat ID.
+- Replace <YOUR_BOT_TOKEN> with your actual token. Go back to your chat and send any message to the bot, before returning to the browser and refresh the page.
+- Look for "chat":{"id":123456789,...} in the JSON response. This number is your chat ID.
 - Save the bot token and chat_id in a .env file in your project root, they MUST be named TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
 - Do so by creating a file called .env in the project root, and including the below 2 lines:
   TELEGRAM_BOT_TOKEN='your_token_here'
