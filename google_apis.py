@@ -12,12 +12,12 @@ def create_service(client_secret_file, api_name, api_version, scopes, prefix='')
 
     creds = None
     working_dir = os.getcwd()
-    token_dir = 'token files' #dont need underscore?
+    token_dir = 'token files' 
     token_file = f'token_{API_SERVICE_NAME}_{API_VERSION}{prefix}.json'
 
 
     ###check if token dir exists first, if not create the folder
-    #os.path.join probs just makes it cwd/token_dir
+    #os.path.join just makes it cwd/token_dir
     if not os.path.exists(os.path.join(working_dir, token_dir)):
         os.mkdir(os.path.join(working_dir, token_dir))
     

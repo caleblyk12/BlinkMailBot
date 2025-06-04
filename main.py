@@ -12,7 +12,7 @@ service = create_service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
 # --- Filters ---
 KEYWORDS = ['strava', ]  # customize this
-PROCESSED_EMAILS = set()  # remember which ones you've already forwarded
+PROCESSED_EMAILS = set()  # remembers which ones you've already forwarded
 
 def check_emails():
     results = service.users().messages().list(userId='me', labelIds=['INBOX'], maxResults=10).execute()
@@ -28,7 +28,6 @@ def check_emails():
         subject = next((h['value'] for h in headers if h['name'] == 'Subject'), '(No Subject)')
         sender = next((h['value'] for h in headers if h['name'] == 'From'), '')
         snippet = full_msg.get('snippet', '')
-        #debug
 
 
         body = f"📨 From: {sender}\nSubject: {subject}\nSnippet: {snippet}"
@@ -42,7 +41,7 @@ def check_emails():
 while True:
     try:
         check_emails()
-        #debug
+        #debug statement
         print('emails checked')
         time.sleep(30)  # check every 30 seconds
     except KeyboardInterrupt:
