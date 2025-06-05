@@ -41,7 +41,7 @@ BlinkMail/
 ## ✅ Setup Instructions 
 
 ### Prerequisites
-- Python3.x installed
+- Python3.x installed (click add to PATH if installing for the first time)
 - Cloned or downloaded this repository into local project within VSCode, Pycharm, or environment of choice
 - Set up a virtual environment by typing the following into your terminal:
   ```bash
