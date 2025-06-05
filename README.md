@@ -43,8 +43,10 @@ BlinkMail/
 ### Prerequisites
 - Python3.x installed
 - Cloned or downloaded this repository into local project within VSCode, Pycharm, or environment of choice
-- If not using Pycharm, set up a virtual environment for the pip installer
-  https://youtu.be/GZbeL5AcTgw?si=4sf93VyTaig52N3V
+- Set up a virtual environment by typing the following into your terminal:
+  ```bash
+   python -m venv venv
+   source venv/bin/activate   or .\venv\Scripts\activate on Windows
 
 ### 1. Enable Gmail API, OAuth2.0 
 
@@ -71,15 +73,15 @@ BlinkMail/
 - Look for "chat":{"id":123456789,...} in the JSON response. This number is your chat ID.
 - Save the bot token and chat_id in a .env file in your project root, they MUST be named TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
 - Do so by creating a new file and name it .env in the project root, and writing the following 2 lines in the file:
-  - TELEGRAM_BOT_TOKEN='your_token_here'
-  - TELEGRAM_CHAT_ID='your_chat_id_here'
-- Include quotation marks!
+  - TELEGRAM_BOT_TOKEN=your_token_here
+  - TELEGRAM_CHAT_ID=your_chat_id_here
+- No quotation marks needed
   
 
 ### 3. Install Dependencies
-
+- Install dependencies by typing the following into terminal:
 ```bash
-pip install google-api-python-client google-auth google-auth-oauthlib requests
+pip install -r requirements.txt
 ```
 
 ### 4. Run the Bot
@@ -92,6 +94,9 @@ You'll be asked to log in to your Gmail account and allow read access. This is a
 After that, the bot starts checking for new emails every 30 seconds and sends matches to Telegram.
 Tokens are refreshed automatically and stored locally once access is given the first time, meaning the only form of maintainence after this is running main.py and leaving your pc/laptop on in the background. 
 You will be notified via telegram whenever an email matching filters is received while your pc is running the program. 
+
+
+To terminate the program, just do ctrl + C in your terminal and it will end the polling
 
 ## ✍️ Filter Customization
 
