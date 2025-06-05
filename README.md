@@ -96,7 +96,9 @@ Tokens are refreshed automatically and stored locally once access is given the f
 You will be notified via telegram whenever an email matching filters is received while your pc is running the program. 
 
 
-To terminate the program, just do ctrl + C in your terminal and it will end the polling
+To terminate the program, just do ctrl + C in your terminal and it will end the polling. 
+
+Whenever you want to start polling again, just enter the project folder, activate the virtual environment (Venv) and select the venv interpreter, and run main.py in the background. 
 
 ## ✍️ Filter Customization
 

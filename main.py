@@ -11,7 +11,7 @@ SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 service = create_service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 
 # --- Filters ---
-KEYWORDS = ['supabase', ]  # customize this
+KEYWORDS = ['2fa', 'johntan@gmail.com', 'urgent', 'billing']  # customize this
 PROCESSED_EMAILS = set()  # remembers which ones you've already forwarded
 
 def check_emails():
